@@ -8,14 +8,14 @@ This document tracks our git history with detailed comments about what was built
 
 | Hash | Date | Description | Tools Used |
 |------|------|-------------|------------|
-| *pending* | 2025-12-07 | Initial commit: Project setup with features.json, build-plan.md, and Windows 11 setup guide | `git init` (Bash tool), `Write` tool for file creation |
+| `cb0f36e` | 2025-12-07 | Initial commit: Project setup with features.json, build-plan.md, and Windows 11 setup guide | `git init` (Bash tool), `Write` tool for file creation |
 
 ---
 
 ## Detailed Commit Log
 
 ### Commit 1: Initial Project Setup
-- **Hash:** *will be updated after commit*
+- **Hash:** `cb0f36e`
 - **Date:** 2025-12-07
 - **Author:** Claude Code (Opus 4.5) + User
 
