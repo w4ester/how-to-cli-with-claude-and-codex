@@ -683,15 +683,164 @@ Or enable Ctrl+V:
 
 ---
 
+# PART 8: PRICING & STUDENT DISCOUNTS
+
+## Claude Code Pricing Options
+
+When you run `claude` and it asks you to log in, you have two choices:
+
+| Option | What It Is | Cost | Best For |
+|--------|------------|------|----------|
+| **Claude.ai Subscription** | Monthly subscription to claude.ai | $20/month (Pro) or $100/month (Max) | Heavy users, includes web chat too |
+| **Anthropic Console (API)** | Pay-as-you-go API credits | ~$3 per million tokens (varies by model) | Light users, testing, developers |
+
+## Student Discounts (As of December 2025)
+
+**There is NO general student discount** for Claude, but there are other options:
+
+### Universities with FREE Claude Pro Access
+
+These schools have campus-wide agreements with Anthropic:
+
+| University | What Students Get |
+|------------|-------------------|
+| Northeastern University | Free Claude Pro for all students |
+| London School of Economics (LSE) | Free Claude Pro for all students |
+| Champlain College | Free Claude Pro for all students |
+| Carnegie Mellon University (CMU) | Claude Pro for $1/month |
+
+**Check with your university's IT department** - more schools are joining!
+
+### Student Programs You Can Apply For
+
+| Program | What You Get | How to Apply |
+|---------|--------------|--------------|
+| Claude Campus Ambassador | Free access + perks | Apply at claude.ai |
+| Student Builder Program | API credits for projects | Apply at claude.ai |
+
+**Source:** https://www.claude.com/solutions/education
+
+### Tips for Students on a Budget
+
+1. **Use the free tier first** - claude.ai has limited free messages per day
+2. **Use API pay-as-you-go** - often cheaper than subscription for light use
+3. **Check GitHub Student Pack** - sometimes includes AI tool credits
+4. **Ask your professor** - some departments have educational licenses
+
+---
+
+# PART 9: CLAUDE CODE SETTINGS & CONFIGURATION
+
+## Permission Modes - What to Choose When Asked
+
+When Claude Code starts, it may ask what permission level you want:
+
+| Mode | What It Does | Recommendation |
+|------|--------------|----------------|
+| **Default** | Asks your permission before each action | **Start here** - safest for beginners |
+| **Accept Edits** | Auto-approves file changes, still asks for commands | Good once you're comfortable |
+| **Trust/Bypass** | Does everything without asking | **Don't use** - too risky for beginners |
+
+**Our recommendation:** Start with **Default** mode. You can always change it later.
+
+## Useful Commands Inside Claude Code
+
+Once Claude Code is running, you can type these commands:
+
+| Command | What It Does |
+|---------|--------------|
+| `/help` | Shows all available commands |
+| `/config` | Opens interactive settings menu |
+| `/cost` | Shows how many tokens you've used (and approximate cost) |
+| `/clear` | Clears conversation history |
+| `/model` | Change which AI model to use |
+| `/exit` | Exit Claude Code |
+
+## Protect Your Sensitive Files
+
+You can tell Claude Code to NEVER read certain files (like passwords).
+
+### How to Set This Up:
+
+**COMMAND: Create a settings file**
+
+**The command to copy:**
+```
+mkdir -p ~/.claude && cat > ~/.claude/settings.json << 'EOF'
+{
+  "permissions": {
+    "deny": [
+      "Read(.env)",
+      "Read(.env.*)",
+      "Read(./secrets/**)",
+      "Read(./**/credentials*)"
+    ]
+  }
+}
+EOF
+```
+
+**Step-by-step:**
+1. Highlight the entire command above (all 11 lines!)
+2. Hold **Ctrl** and tap **C**
+3. Click inside your Ubuntu terminal
+4. **Right-click** to paste
+5. Press **Enter**
+
+**What this does:**
+- Creates a folder called `.claude` in your home directory
+- Creates a `settings.json` file inside it
+- Tells Claude Code to NEVER read files named `.env` or anything in `secrets` folders
+
+**You won't see any output** - that's normal. The file is created silently.
+
+## Settings File Locations
+
+Claude Code looks for settings in these places (in order of priority):
+
+| Location | What It's For |
+|----------|---------------|
+| `~/.claude/settings.json` | Your personal settings (applies to all projects) |
+| `.claude/settings.json` | Project settings (shared with team via git) |
+| `.claude/settings.local.json` | Project settings (personal, not shared) |
+
+## Example Settings File
+
+Here's a complete beginner-friendly settings file:
+
+```json
+{
+  "permissions": {
+    "deny": [
+      "Read(.env)",
+      "Read(.env.*)",
+      "Read(./secrets/**)",
+      "Read(./**/credentials*)",
+      "Read(./**/password*)"
+    ]
+  }
+}
+```
+
+## Changing Settings Later
+
+You can always change settings by:
+
+1. **Inside Claude Code:** Type `/config` to open the settings menu
+2. **Edit the file directly:** Open `~/.claude/settings.json` in any text editor
+
+---
+
 ## Document Metadata
 
 | Field | Value |
 |-------|-------|
 | Created | 2025-12-07 |
-| Tools Used | `WebSearch` tool, `WebFetch` tool, `Write` tool |
+| Last Updated | 2025-12-07 |
+| Tools Used | `WebSearch` tool, `WebFetch` tool, `Write` tool, `Task` tool, `Edit` tool |
 | Sources | Official Anthropic and OpenAI documentation |
-| Verified | Yes - against official docs |
+| Verified | Yes - against official docs and user testing |
 
 ---
 
-*This guide was created using Claude Code to research official documentation and compile step-by-step instructions.*
+*This guide was created using Claude Code to research official documentation and compile step-by-step instructions. Every section was tested by a real user installing on Windows 11.*
