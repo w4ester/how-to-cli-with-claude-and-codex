@@ -13,6 +13,12 @@ This document tracks our git history with detailed comments about what was built
 | `a1ea53c` | 2025-12-07 | Add comprehensive Claude Code tools documentation | `Read` tool, `Edit` tool, `Bash` tool |
 | `5cc7ca0` | 2025-12-07 | Update Git Commit History table | `Read` tool, `Edit` tool, `Bash` tool |
 | `2bf4e54` | 2025-12-07 | Add step-by-step directions for Claude Code & Codex CLI on Windows | `WebSearch` tool, `WebFetch` tool, `Write` tool, `Bash` tool |
+| `99211fb` | 2025-12-07 | Update Git Commit History table | `Read` tool, `Edit` tool, `Bash` tool |
+| `9f3de20` | 2025-12-07 | Add README.md for GitHub repository | `Write` tool, `Bash` tool |
+| `013201a` | 2025-12-07 | Expand UNIX user account setup (password visibility warning) | `Read` tool, `Edit` tool, `Bash` tool |
+| `589c3cd` | 2025-12-07 | Add copy/paste instructions for Ubuntu terminal | `Read` tool, `Edit` tool, `Bash` tool |
+| `784241d` | 2025-12-07 | Rewrite Node.js/Git install as literal walkthrough (COMMAND 1-8) | `Read` tool, `Edit` tool, `Bash` tool |
+| `724abbe` | 2025-12-07 | Add PART 8 (Pricing/Student Discounts) and PART 9 (Settings) | `WebSearch` tool, `Task` tool, `Edit` tool, `Bash` tool |
 
 ---
 
