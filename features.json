@@ -1,0 +1,100 @@
+{
+  "_metadata": {
+    "project": "how-to-cli-with-claude-and-codex",
+    "description": "Learning project for using Claude Code CLI on Windows 11",
+    "created": "2025-12-07",
+    "workflow_note": "When a feature's 'tested' field changes from false to true, create a git commit with details about what was verified and how"
+  },
+  "features": [
+    {
+      "id": "F001",
+      "name": "Install Node.js on Windows 11",
+      "description": "Install Node.js (v18+) which is required for Claude Code",
+      "category": "setup",
+      "tested": false,
+      "test_notes": "",
+      "commit_on_verify": "git commit with: 'Verified F001: Node.js installation confirmed working on Windows 11'"
+    },
+    {
+      "id": "F002",
+      "name": "Install Claude Code via npm",
+      "description": "Run 'npm install -g @anthropic-ai/claude-code' to install globally",
+      "category": "setup",
+      "tested": false,
+      "test_notes": "",
+      "commit_on_verify": "git commit with: 'Verified F002: Claude Code npm installation successful'"
+    },
+    {
+      "id": "F003",
+      "name": "Authenticate with Anthropic API",
+      "description": "Run 'claude' and complete authentication flow",
+      "category": "setup",
+      "tested": false,
+      "test_notes": "",
+      "commit_on_verify": "git commit with: 'Verified F003: Authentication with Anthropic API working'"
+    },
+    {
+      "id": "F004",
+      "name": "Basic CLI conversation",
+      "description": "Start Claude Code and have a basic conversation",
+      "category": "usage",
+      "tested": false,
+      "test_notes": "",
+      "commit_on_verify": "git commit with: 'Verified F004: Basic CLI conversation working'"
+    },
+    {
+      "id": "F005",
+      "name": "File reading capability",
+      "description": "Test Claude Code's ability to read files in the project",
+      "category": "usage",
+      "tested": false,
+      "test_notes": "",
+      "commit_on_verify": "git commit with: 'Verified F005: File reading capability confirmed'"
+    },
+    {
+      "id": "F006",
+      "name": "File editing capability",
+      "description": "Test Claude Code's ability to edit files",
+      "category": "usage",
+      "tested": false,
+      "test_notes": "",
+      "commit_on_verify": "git commit with: 'Verified F006: File editing capability confirmed'"
+    },
+    {
+      "id": "F007",
+      "name": "Bash/PowerShell command execution",
+      "description": "Test running shell commands through Claude Code on Windows",
+      "category": "usage",
+      "tested": false,
+      "test_notes": "",
+      "commit_on_verify": "git commit with: 'Verified F007: Shell command execution working on Windows'"
+    },
+    {
+      "id": "F008",
+      "name": "Git integration",
+      "description": "Test Claude Code's ability to run git commands",
+      "category": "usage",
+      "tested": false,
+      "test_notes": "",
+      "commit_on_verify": "git commit with: 'Verified F008: Git integration confirmed'"
+    },
+    {
+      "id": "F009",
+      "name": "Project exploration with Glob/Grep",
+      "description": "Test searching and exploring codebase",
+      "category": "usage",
+      "tested": false,
+      "test_notes": "",
+      "commit_on_verify": "git commit with: 'Verified F009: Project exploration tools working'"
+    },
+    {
+      "id": "F010",
+      "name": "Web search capability",
+      "description": "Test Claude Code's web search for documentation",
+      "category": "usage",
+      "tested": false,
+      "test_notes": "",
+      "commit_on_verify": "git commit with: 'Verified F010: Web search capability confirmed'"
+    }
+  ]
+}
