@@ -125,51 +125,208 @@ In Linux terminals, the normal paste shortcut (Ctrl and V together) does somethi
 5. Press the **Enter** key to run it
 6. **Wait** for it to finish (you'll see your prompt come back) before doing the next one
 
-```bash
-# Update package list (like refreshing an app store)
+---
+
+### COMMAND 1: Update the package list
+
+**What this does:** Downloads the latest list of available software (like refreshing an app store).
+
+**The command to copy:**
+```
 sudo apt update
 ```
 
-```bash
-# Install Node.js version manager (nvm)
+**Step-by-step:**
+1. Use your mouse to highlight the text `sudo apt update` above
+2. Hold the **Ctrl** key and tap the **C** key (this copies it)
+3. Click inside your Ubuntu terminal window
+4. **Right-click** your mouse (the command appears)
+5. Press the **Enter** key
+
+**What you'll see:**
+```
+[sudo] password for yourname:
+```
+
+**What to do:**
+- Type your password (remember: NO characters will appear - that's normal!)
+- Press **Enter**
+- Wait for text to scroll by (this is normal)
+- **You're done when you see** your prompt again, like: `yourname@DESKTOP-XXXXX:~$`
+
+---
+
+### COMMAND 2: Install nvm (Node Version Manager)
+
+**What this does:** Installs a tool that helps you install Node.js.
+
+**The command to copy:**
+```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 ```
 
-```bash
-# Reload your shell configuration
+**Step-by-step:**
+1. Highlight the entire command above (it's long - make sure you get all of it)
+2. Hold **Ctrl** and tap **C**
+3. Click inside your Ubuntu terminal
+4. **Right-click** to paste
+5. Press **Enter**
+
+**What you'll see:**
+- Text downloading and installing
+- Eventually a message about "nvm" being installed
+- **You're done when you see** your prompt again: `yourname@DESKTOP-XXXXX:~$`
+
+---
+
+### COMMAND 3: Reload your terminal settings
+
+**What this does:** Tells your terminal to recognize the nvm tool you just installed.
+
+**The command to copy:**
+```
 source ~/.bashrc
 ```
 
-```bash
-# Install Node.js version 20 (LTS = Long Term Support = stable)
+**Step-by-step:**
+1. Highlight `source ~/.bashrc`
+2. Hold **Ctrl** and tap **C**
+3. Click inside your Ubuntu terminal
+4. **Right-click** to paste
+5. Press **Enter**
+
+**What you'll see:**
+- Probably nothing! That's normal.
+- **You're done when you see** your prompt again: `yourname@DESKTOP-XXXXX:~$`
+
+---
+
+### COMMAND 4: Install Node.js
+
+**What this does:** Downloads and installs Node.js version 20 (the stable version).
+
+**The command to copy:**
+```
 nvm install 20
 ```
 
-```bash
-# Verify Node.js is installed
+**Step-by-step:**
+1. Highlight `nvm install 20`
+2. Hold **Ctrl** and tap **C**
+3. Click inside your Ubuntu terminal
+4. **Right-click** to paste
+5. Press **Enter**
+
+**What you'll see:**
+```
+Downloading and installing node v20.x.x...
+Now using node v20.x.x (npm v10.x.x)
+```
+- **You're done when you see** your prompt again: `yourname@DESKTOP-XXXXX:~$`
+
+---
+
+### COMMAND 5: Verify Node.js is installed
+
+**What this does:** Checks that Node.js installed correctly.
+
+**The command to copy:**
+```
 node --version
 ```
-You should see something like `v20.x.x`
 
-```bash
-# Verify npm is installed
+**Step-by-step:**
+1. Highlight `node --version`
+2. Hold **Ctrl** and tap **C**
+3. Click inside your Ubuntu terminal
+4. **Right-click** to paste
+5. Press **Enter**
+
+**What you should see:**
+```
+v20.x.x
+```
+(The x's will be numbers, like `v20.10.0`)
+
+**If you see a version number, Node.js is installed!**
+
+---
+
+### COMMAND 6: Verify npm is installed
+
+**What this does:** Checks that npm (Node Package Manager) installed correctly. npm comes bundled with Node.js.
+
+**The command to copy:**
+```
 npm --version
 ```
-You should see something like `10.x.x`
+
+**Step-by-step:**
+1. Highlight `npm --version`
+2. Hold **Ctrl** and tap **C**
+3. Click inside your Ubuntu terminal
+4. **Right-click** to paste
+5. Press **Enter**
+
+**What you should see:**
+```
+10.x.x
+```
+(The x's will be numbers, like `10.2.3`)
+
+**If you see a version number, npm is installed!**
 
 ---
 
 ## Step 1.3: Install Git (Required for version control)
 
-```bash
-# Install git
+---
+
+### COMMAND 7: Install Git
+
+**What this does:** Installs Git, a tool for tracking changes to your code.
+
+**The command to copy:**
+```
 sudo apt install git -y
 ```
 
-```bash
-# Verify git is installed
+**Step-by-step:**
+1. Highlight `sudo apt install git -y`
+2. Hold **Ctrl** and tap **C**
+3. Click inside your Ubuntu terminal
+4. **Right-click** to paste
+5. Press **Enter**
+
+**What you'll see:**
+- It might ask for your password (type it, press Enter)
+- Text will scroll showing the installation
+- **You're done when you see** your prompt again: `yourname@DESKTOP-XXXXX:~$`
+
+---
+
+### COMMAND 8: Verify Git is installed
+
+**What this does:** Checks that Git installed correctly.
+
+**The command to copy:**
+```
 git --version
 ```
+
+**Step-by-step:**
+1. Highlight `git --version`
+2. Hold **Ctrl** and tap **C**
+3. Click inside your Ubuntu terminal
+4. **Right-click** to paste
+5. Press **Enter**
+
+**What you should see:**
+```
+git version 2.x.x
+```
+
+**If you see a version number, Git is installed!**
 
 ---
 
