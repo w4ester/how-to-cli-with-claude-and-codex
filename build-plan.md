@@ -9,6 +9,8 @@ This document tracks our git history with detailed comments about what was built
 | Hash | Date | Description | Tools Used |
 |------|------|-------------|------------|
 | `cb0f36e` | 2025-12-07 | Initial commit: Project setup with features.json, build-plan.md, and Windows 11 setup guide | `git init` (Bash tool), `Write` tool for file creation |
+| `a911096` | 2025-12-07 | Update build-plan.md with actual commit hash | `Read` tool, `Edit` tool, `Bash` tool |
+| `a1ea53c` | 2025-12-07 | Add comprehensive Claude Code tools documentation | `Read` tool, `Edit` tool, `Bash` tool |
 
 ---
 
