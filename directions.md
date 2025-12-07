@@ -92,7 +92,38 @@ This is your Linux command prompt. **You now have Linux running inside Windows!*
 
 **What is Node.js?** A program that runs JavaScript on your computer. Both Claude Code and Codex are built with JavaScript.
 
-### In your Ubuntu/WSL terminal, run these commands one at a time:
+---
+
+### BEFORE YOU START: How to Copy and Paste in Ubuntu Terminal
+
+The Ubuntu terminal works differently than regular Windows apps!
+
+**To copy a command from this guide:**
+1. Use your mouse to highlight the command text
+2. Hold down the **Ctrl** key on your keyboard and press the **C** key
+   (This copies the text - nothing visible happens, that's normal)
+
+**To paste into the Ubuntu terminal (choose one method):**
+
+| Method | How to do it |
+|--------|--------------|
+| **Easiest** | Move your mouse into the Ubuntu window and **click the RIGHT mouse button** |
+| **Keyboard** | Hold **Ctrl** AND **Shift** together, then press **V** |
+
+**Why doesn't the normal paste work?**
+In Linux terminals, the normal paste shortcut (Ctrl and V together) does something else. That's why you need to either right-click or add the Shift key.
+
+---
+
+### Run these commands one at a time:
+
+**For each command below, do this:**
+1. Highlight the command text with your mouse
+2. Press **Ctrl + C** (hold Ctrl, tap C) to copy
+3. Click inside your Ubuntu terminal window
+4. **Right-click your mouse** to paste the command
+5. Press the **Enter** key to run it
+6. **Wait** for it to finish (you'll see your prompt come back) before doing the next one
 
 ```bash
 # Update package list (like refreshing an app store)
