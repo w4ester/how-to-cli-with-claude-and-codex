@@ -56,10 +56,35 @@ wsl --install
 2. Type `Ubuntu`
 3. Click to open it
 4. Wait for "Installing, this may take a few minutes..."
-5. Create a username (lowercase, no spaces)
-6. Create a password (you won't see it as you type - that's normal)
 
-**You now have Linux running inside Windows!**
+### Create a Default UNIX User Account:
+
+Ubuntu will ask you to create a user account. **This is separate from your Windows account** - it's your identity inside the Linux environment.
+
+**When you see:** `Enter new UNIX username:`
+- Type a username (lowercase, no spaces)
+- Examples: `will`, `dev`, `coder`
+- Press Enter
+
+**When you see:** `New password:`
+- Type a password you'll remember
+- **IMPORTANT: You will NOT see ANY characters as you type!**
+  - No dots (•••)
+  - No asterisks (***)
+  - The cursor won't move
+  - **This is completely normal** - it's a Linux security feature
+- Just type your password "blindly" and press Enter
+
+**When you see:** `Retype new password:`
+- Type the same password again (still invisible)
+- Press Enter
+
+**Success looks like:**
+```
+username@DESKTOP-XXXXXX:~$
+```
+
+This is your Linux command prompt. **You now have Linux running inside Windows!**
 
 ---
 
